@@ -40,7 +40,7 @@ if(codigodeacceso==='000'){
 	   puntos ++
 	   console.log('Tus puntos son:' +puntos)
 	}else {
-         alert('Haz fallado.');
+         alert('Has fallado.');
 	}  
          
 
@@ -52,7 +52,7 @@ if(codigodeacceso==='000'){
 	     puntos++
 	     console.log('Tus puntos son:'+ puntos)
 	}else {
-          alert('Haz fallado.');
+          alert('Has fallado.');
     }
 
 
@@ -63,7 +63,7 @@ if(codigodeacceso==='000'){
           puntos++
 	     console.log('Tus puntos son:' + puntos)
 	}else {
-         alert('Haz fallado.');
+         alert('Has fallado.');
     }
 
 
@@ -74,7 +74,7 @@ if(codigodeacceso==='000'){
 	      puntos++
 	     console.log('Tus puntos son:' + puntos)
 	}else {
-         alert('Haz fallado.');
+         alert('Has fallado.');
     }
 
 
@@ -86,7 +86,7 @@ if(codigodeacceso==='000'){
 	      puntos++
 	     console.log('Tus puntos son:' + puntos)
 	}else {
-         alert('Haz fallado.');
+         alert('Has fallado.');
     }
 
 
