@@ -1,34 +1,175 @@
 <!DOCTYPE html>
+
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet" type="text/css">
-	<title>Back To School</title>
-</head>
-<body>
- <header>
-	 <h1>Back To School</h1>
-		<div class="container-icon">
-			<svg 
-			    xmlns="http://www.w3.org/2000/svg"
-			    fill="none" 
-			    viewBox="0 0 24 24"
-			    stroke-width="1.5" 
-			    stroke="currentColor"
-			    class="w-6 h-6">
-             <path 
+    <title>Back To School</title>
+  </head>
+
+ <body>
+    <header>
+      <h1>Back To School</h1>
+      <div class="container-icon">
+      <svg 
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none" 
+        viewBox="0 0 24 24"
+        stroke-width="1.5" 
+        stroke="currentColor"
+        class="icon-cart">
+
+        <path 
+          stroke-linecap="round" 
+          stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" 
+        />
+      </svg> 
+
+      <div class="count-productos">
+        <span id="contador-productos"></span>
+      </div>
+
+      <div class="container-productos hidden-cart">
+        <div class="row-product hidden">
+         <div class="cart-productos">
+           <div class="info-cart-producto">
+            <span class="cantidad-producto-carrito"></span>
+            <p class="titulo-producto-carrito"></p>
+            <span class="precio-producto-carrito"></span>
+            <svg 
+              xmlns="http://www.w3.org/2000/svg" 
+              fill="none" viewBox="0 0 24 24" 
+              stroke-width="1.5" 
+              stroke="currentColor" 
+              class="icon-close">
+              <path 
                 stroke-linecap="round" 
-                stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-            </svg>	
-	    </div>
- </header>
- <div class="item">
- 	<figure>
- 		<img src="angular.png" alt="producto">
- 	</figure>
- 	
- </div>
-</body>
+                stroke-linejoin="round" 
+                d="M6 18 18 6M6 6l12 12" 
+              />
+            </svg>
+          </div>
+          </div>
+        </div>
+        <div class="cart-total">
+          <h3>Total:</h3>
+          <span class="total-pagar">$30000</span>
+        </div>
+      </div> 
+    </header>
+
+    <div class="container-items">
+      <div class="item">
+        <figure>
+          <img src="angular.png" alt="producto">
+        </figure>
+
+        <div class="info-producto">
+          <h2>ANGULAR</h2>
+          <p class="price">$30000</p>
+          <button class="btn-add-cart">Agregar al carrito</button>
+        </div>
+    </div>
+
+    <div class="item">
+     <figure>
+        <img src="js.png" alt="producto">
+     </figure>
+
+     <div class="info-producto">
+       <h2>JAVASCRIPT</h2>
+        <p class="price">$40000</p>
+        <button class="btn-add-cart">Agregar al carrito</button>
+     </div>
+    </div>
+
+    <div class="item">
+      <figure>
+        <img src="phynton.png" alt="producto">
+      </figure>
+
+      <div class="info-producto">
+        <h2>PHYNTON</h2>
+        <p class="price">$40000</p>
+        <button class="btn-add-cart">Agregar al carrito</button>
+      </div>
+    </div>
+
+    <div class="item">
+      <figure>
+        <img src="sql.png" alt="producto">
+      </figure>
+
+      <div class="info-producto">
+        <h2>SQL</h2>
+        <p class="price">$60000</p>
+        <button class="btn-add-cart">Agregar al carrito</button>
+      </div>
+    </div>
+
+    <div class="item">
+      <figure>
+         <img src="html.png" alt="producto">
+      </figure>
+
+      <div class="info-producto">
+        <h2>HTML</h2>
+        <p class="price">$20000</p>
+        <button class="btn-add-cart">Agregar al carrito</button>
+      </div>
+    </div>
+
+    <div class="item">
+        <figure>
+          <img src="css.png" alt="producto">
+        </figure>
+
+        <div class="info-producto">
+         <h2>CSS</h2>
+         <p class="price">$20000</p>
+         <button class="btn-add-cart">Agregar al carrito</button>
+      </div>
+    </div>
+
+    <div class="item">
+      <figure>
+        <img src="php.png" alt="producto">
+      </figure>
+
+      <div class="info-producto">
+        <h2>PHP</h2>
+        <p class="price">$50000</p>
+        <button class="btn-add-cart">Agregar al carrito</button>
+      </div>
+    </div>
+
+    <div class="item">
+      <figure>
+        <img src="react.png" alt="producto">
+      </figure>
+
+      <div class="info-producto">
+        <h2>REACT JS</h2>
+        <p class="price">$50000</p>
+        <button class="btn-add-cart">Agregar al carrito</button>
+      </div>
+    </div>
+
+    <div class="item">
+      <figure>
+        <img src="c.png" alt="producto">
+      </figure>
+
+      <div class="info-producto">
+        <h2>C++</h2>
+        <p class="price">$50000</p>
+        <button class="btn-add-cart">Agregar al carrito</button>
+      </div>
+    </div>
+    <script src="main.js"></script>
+ </body>
 </html>
+<!DOCTYPE html>
